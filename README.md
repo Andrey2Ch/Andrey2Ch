@@ -17,32 +17,21 @@ I spent 15+ years managing production with Excel, WhatsApp, and clipboards. Then
 
 **LiveShopFloor** is a 9-module ecosystem running a real factory — 18 CNC machines, 6M+ parts tracked, 3+ years in daily production use.
 
-<table>
-<tr>
-<td width="50%">
-
-**Production & Planning**
 | Module | What it does |
 |---|---|
-| [MES Dashboard](https://github.com/Andrey2Ch/isramat-dashboard) | Kanban planning, order management, role-based views |
-| [Machine Monitor](https://github.com/Andrey2Ch/mtconnect-core) | Real-time FOCAS + Modbus, 18 machines 24/7 |
-| [Backend API](https://github.com/Andrey2Ch/machine-logic-service) | FastAPI business logic, lot lifecycle, QC workflow |
+| MES Dashboard | Kanban planning, order management, role-based views (9 roles) |
+| Machine Monitor | Real-time FOCAS + Modbus, 18 machines 24/7, TV Mode |
+| Backend API | FastAPI business logic, lot lifecycle, QC workflow |
+| Telegram Bot | Operator & machinist daily interface, zero app adoption |
+| Warehouse & Materials | Batch traceability, OCR intake, process gates |
+| Program Vault | CNC program revisions, immutable history |
+| AI Advisor | Natural language queries over production data (Text2SQL) |
+| QC Workflow | Quality control with gates and approvals |
+| WhatsApp | Role-based alerts with AI translation (RU→HE) |
+| Time Tracking | Geolocation-based attendance via Telegram |
+| Metrology Tracker | Calibration management + AI certificate parsing |
 
-</td>
-<td width="50%">
-
-**Interfaces & Tools**
-| Module | What it does |
-|---|---|
-| [Telegram Bot](https://github.com/Andrey2Ch/IsramatBot) | Operator & machinist daily interface |
-| [Metrology Tracker](https://github.com/Andrey2Ch/metrology-tracker) | Calibration management + AI certificate parsing |
-| WhatsApp Integration | Role-based alerts with AI translation (RU→HE) |
-
-</td>
-</tr>
-</table>
-
-**Also built into the ecosystem:** Warehouse & Materials (batch traceability, OCR intake), Program Vault (CNC program revisions), AI Advisor (Text2SQL over production data), QC Workflow (process gates), Time Tracking (geolocation attendance).
+> See the full ecosystem at **[liveshopfloor.com](https://liveshopfloor.com)**
 
 ---
 
